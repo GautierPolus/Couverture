@@ -1,0 +1,133 @@
+.hero-section{
+    background: url(img/1.jpg) no-repeat fixed center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    border-radius: 1%;
+}
+.hero-section img{
+    width: 100%;
+    height: auto;
+}
+.hero-main{
+    font-size:3rem;
+    line-height: 3rem;
+    margin-bottom: 2,5rem;
+    font-weight: bold;
+    color:rgb(248, 245, 245);
+    text-decoration: underline;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+.hero-sub{
+    margin-top: 5%;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 800;
+    color:rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+body{
+    background-color: #ada6a6;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    color: rgba(252, 244, 244, 0.76)
+}
+.main-presentation{ 
+    color: white;
+    margin-top: 2%;
+    width: 92%;
+    margin-left: 5%;
+    height: auto;
+}
+.main-presentation h2{
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 2%;
+}
+.second-presentation{ 
+    color: white;
+    margin-top: 5%;
+    width: 30%;
+    height: 20% auto; 
+}
+.second-presentation h2{
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 2%;
+}
+.third-presentation{ 
+    color: white;
+    margin-top: 2%;
+    width: 92%;
+    margin-left: 5%;
+    height: auto;
+}
+.third-presentation h2{
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 2%;
+}
+
+#carouselExampleControls {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.carousel-item img{
+    width: 100%;
+    height: auto;
+}
+.ending{
+    color: white;
+    margin-top: 2%;
+    width: 92%;
+    margin-left: 5%;
+    height: auto;
+    margin-bottom: 5%;
+}
+.ending h2{
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 2%;
+}
+.endingimg{
+    max-width: 100%;
+    height: auto;
+}
+.basdepage{
+    margin-top: 5%;
+    color: black;
+    border-top: 3px solid white;
+    margin: auto;
+    width : 100%;
+    text-align: center;
+
+}
+.creationsite{
+    margin-top: -1%;
+}
+.textform{
+    color: white;
+    margin-top: 2%;
+    width: 92%;
+    margin-left: 5%;
+    height: auto;
+}
+.textformfin{
+    color: white;
+    margin-top: 2%;
+    width: 92%;
+    margin-left: 5%;
+    height: auto;
+    margin-bottom: 5%;
+}
+.form{
+    margin: 0 auto;
+    width: 70%;
+}
