@@ -1,74 +1,312 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de Devis Gratuit | Le Couvreur au Chat</title>
+    <meta name="description" content="Demandez votre devis gratuit et sans engagement pour vos travaux de toiture, couverture et zinguerie en Meurthe-et-Moselle. Réponse sous 48h.">
+    <link rel="icon" type="image/png" href="img/cat.png">
+
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Le couvreur au chat</title>
 </head>
 <body>
-<!-- début navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"> <img src="img/cat.png" style="width: 20px;height: 30px;" alt="logo chat"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="devis.html">Devis</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <!-- fin navebar -->
-   <section>
-     <div class="textform container-fluid">
-      <h2>Vous avez choisi de nous faire confiance ? </h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, incidunt dolor cum possimus, repudiandae ipsam iure libero neque molestiae fugit sunt. Enim provident ipsum eveniet quas eum. Minima, at esse.</p>
-     </div>
-   </section>
-    <!-- Formulaire -->
-    <div class="form">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Numero de telephone</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Numero de telephone">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Nom</label>
-          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Demande de devis / Prise de rendez vous</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary mb-2">Envoyer</button>
-    </div>
 
-      
-
-      
-        <div class="textformfin container-fluid">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, incidunt dolor cum possimus, repudiandae ipsam iure libero neque molestiae fugit sunt. Enim provident ipsum eveniet quas eum. Minima, at esse.</p>
+    <!-- Barre de Navigation -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/cat.png" alt="Logo Le Couvreur au Chat" class="navbar-brand-logo">
+                <div class="navbar-brand-text">
+                    <span class="title">Le Couvreur au Chat</span>
+                    <span class="subtitle">De père en fils depuis 1897</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Ouvrir le menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Nos Prestations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#realisations">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="devis.html">Devis en ligne</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Nous contacter</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-cta-btn" href="tel:0625994612">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            06 25 99 46 12
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      
+    </nav>
 
-      <footer class="basdepage row">
-        <a href="cgu.html" target="_blank" style="color: black"> Condition d'utilisation et cookies</a>
-      <address>
-        <a href="mailto:polusgautier@gmail.com"  style="color: black"> Email : Polusgautier@gmail.com</a> &nbsp; &nbsp;
-        <a href="tel:0625994612" style="color: black">Telephone : 0625994612</a>
-      </address>
-      <div class="creationsite">
-        <p>© 2021-2022</p>
-      </div>
+    <!-- Header Bannière Devis -->
+    <header class="hero-wrapper" style="padding: 4.5rem 0 4rem 0;">
+        <div class="container text-center">
+            <div class="hero-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Sans engagement • Réponse sous 48 heures</span>
+            </div>
+            <h1 class="hero-title" style="font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 0.8rem;">
+                Demande de <span>Devis Gratuit</span>
+            </h1>
+            <p class="hero-subtitle mb-0">
+                Vous avez choisi de faire confiance à un savoir-faire familial centenaire. Décrivez votre besoin en 2 minutes.
+            </p>
+        </div>
+    </header>
+
+    <!-- Section Formulaire Devis -->
+    <main class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                
+                <!-- Colonne Gauche: Formulaire complet -->
+                <div class="col-lg-8">
+                    <div class="form-card">
+                        <span class="section-subtitle">Estimation personnalisée</span>
+                        <h2 class="h3 fw-bold mb-3">Détaillez vos besoins de couverture</h2>
+                        <p class="text-muted mb-4">
+                            Chaque toiture est unique. Plus vous nous apportez d'informations, plus notre chiffrage sera précis et adapté à vos attentes.
+                        </p>
+
+                        <form id="devisForm" novalidate>
+                            <!-- Étape 1: Projet -->
+                            <h4 class="h5 fw-bold text-dark border-bottom pb-2 mb-3">1. Votre projet</h4>
+                            
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="devisPrestation" class="form-label">Type de travaux souhaité <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="devisPrestation" required>
+                                        <option value="" selected disabled>Sélectionnez une prestation</option>
+                                        <option value="tuile">Toiture en tuiles (pose ou réfection)</option>
+                                        <option value="ardoise">Toiture en ardoise naturelle</option>
+                                        <option value="zinguerie">Travaux de zinguerie & gouttières</option>
+                                        <option value="renovation">Rénovation complète de toiture</option>
+                                        <option value="reparation">Réparation urgente / Recherche de fuite</option>
+                                        <option value="entretien">Démoussage, nettoyage & hydrofuge</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="devisBien" class="form-label">Type d'habitation</label>
+                                    <select class="form-select" id="devisBien">
+                                        <option value="maison">Maison individuelle</option>
+                                        <option value="immeuble">Immeuble / Copropriété</option>
+                                        <option value="annexe">Garage ou dépendance</option>
+                                        <option value="autre">Autre bâtiment</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="devisSurface" class="form-label">Surface approximative du toit (m²)</label>
+                                    <input type="number" class="form-control" id="devisSurface" placeholder="Ex: 120" min="5" max="2000">
+                                    <div class="form-text">Si vous ne la connaissez pas, laissez ce champ vide.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="devisDelai" class="form-label">Délai d'intervention souhaité</label>
+                                    <select class="form-select" id="devisDelai">
+                                        <option value="urgent">Très urgent (fuite en cours / intempérie)</option>
+                                        <option value="1mois">Dans le mois</option>
+                                        <option value="3mois" selected>Dans les 3 mois</option>
+                                        <option value="annee">Dans l'année</option>
+                                        <option value="projet">Simple estimation budgétaire</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Étape 2: Coordonnées -->
+                            <h4 class="h5 fw-bold text-dark border-bottom pb-2 mb-3">2. Vos coordonnées</h4>
+                            
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="devisNom" class="form-label">Nom et Prénom <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="devisNom" placeholder="Votre nom complet" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="devisTel" class="form-label">Numéro de téléphone <span class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control" id="devisTel" placeholder="06 12 34 56 78" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="devisEmail" class="form-label">Adresse email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="devisEmail" placeholder="nom@exemple.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="devisVille" class="form-label">Ville ou Code Postal du chantier <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="devisVille" placeholder="Ex: Nancy (54000)" required>
+                                </div>
+                            </div>
+
+                            <!-- Étape 3: Message / Description -->
+                            <h4 class="h5 fw-bold text-dark border-bottom pb-2 mb-3">3. Précisions & Remarques</h4>
+                            <div class="mb-4">
+                                <label for="devisMessage" class="form-label">Description du projet ou commentaires</label>
+                                <textarea class="form-control" id="devisMessage" rows="4" placeholder="Indiquez ici tout détail utile : hauteur du bâtiment, accès au toit, présence d'échafaudage ou photos disponibles..."></textarea>
+                            </div>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="devisConsent" required checked>
+                                <label class="form-check-label small text-muted" for="devisConsent">
+                                    J'accepte que mes données soient traitées dans le cadre exclusif de l'établissement de mon devis conformément à notre politique de confidentialité.
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn-primary-custom w-100 py-3">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Valider et envoyer ma demande de devis
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Colonne Droite: Avantages & Réassurance -->
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column gap-4">
+                        
+                        <!-- Carte d'engagements -->
+                        <div class="contact-info-card">
+                            <h3 class="h4 fw-bold mb-3">Pourquoi nous faire confiance ?</h3>
+                            
+                            <div class="d-flex align-items-start gap-3 mb-3">
+                                <div class="contact-method-icon" style="background: rgba(34, 197, 94, 0.12); color: #16a34a;">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <div>
+                                    <strong class="d-block text-dark">100% Gratuit & Sans engagement</strong>
+                                    <span class="small text-muted">Étude personnalisée et chiffrage clair sans surprise.</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start gap-3 mb-3">
+                                <div class="contact-method-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                </div>
+                                <div>
+                                    <strong class="d-block text-dark">Réponse rapide sous 48h</strong>
+                                    <span class="small text-muted">Prise de contact rapide et déplacement sur site si nécessaire.</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start gap-3 mb-3">
+                                <div class="contact-method-icon" style="background: rgba(56, 189, 248, 0.12); color: #0284c7;">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                                </div>
+                                <div>
+                                    <strong class="d-block text-dark">Garantie Décennale 10 Ans</strong>
+                                    <span class="small text-muted">Tous nos chantiers de couverture sont couverts par notre assurance.</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="contact-method-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                                <div>
+                                    <strong class="d-block text-dark">Savoir-faire depuis 1897</strong>
+                                    <span class="small text-muted">Quatre générations de couvreurs au service de vos toits.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carte contact direct -->
+                        <div class="p-4 rounded-3 text-white" style="background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-light));">
+                            <h4 class="h5 fw-bold mb-2">Une question urgente ?</h4>
+                            <p class="small text-light-muted mb-3">
+                                Pour une fuite après un orage ou un diagnostic immédiat, contactez-nous par téléphone :
+                            </p>
+                            <a href="tel:0625994612" class="btn-primary-custom w-100 text-center">
+                                Appeler le 06 25 99 46 12
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <img src="img/cat.png" alt="Logo Le Couvreur au Chat">
+                        <div>
+                            <div class="footer-brand-title">Le Couvreur au Chat</div>
+                            <div class="footer-brand-sub">Artisans couvreurs de père en fils depuis 1897</div>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        Entreprise familiale de couverture, zinguerie et rénovation de toiture en Meurthe-et-Moselle (54). Savoir-faire artisanal, rigueur et garantie décennale.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-heading">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#services">Nos Prestations</a></li>
+                        <li><a href="index.html#realisations">Nos Réalisations</a></li>
+                        <li><a href="devis.html">Demande de devis</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                        <li><a href="cgu.html">Conditions d'utilisation & Confidentialité</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <h3 class="footer-heading">Contact & Intervention</h3>
+                    <div class="footer-contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>Téléphone direct : <a href="tel:0625994612" style="color:#fff; font-weight:700;">06 25 99 46 12</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span>Email : <a href="mailto:polusgautier@gmail.com" style="color:#fff;">polusgautier@gmail.com</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <span>Lun - Sam : 08h00 - 19h00 (Urgences fuites 7j/7)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    © <span class="current-year">2026</span> Le Couvreur au Chat - Tous droits réservés.
+                </div>
+                <div>
+                    <a href="cgu.html" class="text-muted text-decoration-none me-3">Mentions Légales & Cookies</a>
+                    <a href="contact.html" class="text-muted text-decoration-none">Contact</a>
+                </div>
+            </div>
+        </div>
     </footer>
-  </body>
+
+    <!-- Scripts Bootstrap 5 & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
 </html>

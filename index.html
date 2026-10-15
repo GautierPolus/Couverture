@@ -1,107 +1,455 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Couvreur au Chat | Artisan Couvreur-Zingueur depuis 1897</title>
+    <meta name="description" content="Entreprise familiale de couverture et zinguerie en Meurthe-et-Moselle (54). Travaux de toiture en tuile, ardoise et zinc. Devis gratuit sous 48h et garantie décennale.">
+    <link rel="icon" type="image/png" href="img/cat.png">
+
+    <!-- Open Graph / Meta réseaux -->
+    <meta property="og:title" content="Le Couvreur au Chat - Couverture & Zinguerie depuis 1897">
+    <meta property="og:description" content="Artisans couvreurs de père en fils en Meurthe-et-Moselle. Rénovation, tuile, ardoise, zinc.">
+    <meta property="og:image" content="img/1.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Le couvreur au chat</title>
 </head>
 <body>
-<!-- début navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"> <img src="img/cat.png" style="width: 20px;height: 30px;" alt="logo chat"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="devis.html">Devis</a>
-              </li>
-            </ul>
-          </div>
+
+    <!-- Barre de Navigation -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/cat.png" alt="Logo Le Couvreur au Chat" class="navbar-brand-logo">
+                <div class="navbar-brand-text">
+                    <span class="title">Le Couvreur au Chat</span>
+                    <span class="subtitle">De père en fils depuis 1897</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Ouvrir le menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Nos Prestations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#realisations">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="devis.html">Devis en ligne</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Nous contacter</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-cta-btn" href="tel:0625994612">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            06 25 99 46 12
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-    <!-- fin navebar -->
-    <!-- Haut de page --> 
-    <section class="hero-section container-fluid">
-        <img  class="logo" src="img/cat.png" style="width: 100px;height: 150px;" alt="Logo chat">
-        <h1 class="hero-main"> Le couvreur au chat , de père en fils depuis 1897.</h1>
-        <h2 class="hero-sub"> Entreprise familiale de couverture/zinguerie dans la région de meurthe et mosèle</h2>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-wrapper">
+        <div class="container text-center">
+            <div class="hero-badge">
+                <img src="img/cat.png" alt="Icône chat" class="cat-mini">
+                <span>Entreprise Familiale • Depuis plus de 125 ans</span>
+            </div>
+            
+            <h1 class="hero-title">
+                Le Couvreur au Chat, <br>
+                <span>de père en fils depuis 1897</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                Artisans spécialistes de la toiture, de la zinguerie et de la rénovation traditionnelle en Meurthe-et-Moselle. Un savoir-faire transmis depuis 4 générations.
+            </p>
+            
+            <div class="hero-actions">
+                <a href="devis.html" class="btn-primary-custom">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    Demander un devis gratuit
+                </a>
+                <a href="contact.html" class="btn-secondary-custom">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    Nous contacter
+                </a>
+            </div>
+            
+            <div class="hero-features-strip">
+                <div class="hero-feature-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Devis gratuit & sans engagement sous 48h
+                </div>
+                <div class="hero-feature-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Garantie décennale 10 ans
+                </div>
+                <div class="hero-feature-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Interventions d'urgence 7j/7
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bandeau Chiffres Clés -->
+    <div class="container stats-strip">
+        <div class="stats-card">
+            <div class="stat-item">
+                <div class="stat-number">1897</div>
+                <div class="stat-label">Année de fondation</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4e</div>
+                <div class="stat-label">Génération de couvreurs</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Garantie Décennale</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">48h</div>
+                <div class="stat-label">Délai moyen de devis</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Présentation & Savoir-faire -->
+    <section class="section-padding" id="histoire">
+        <div class="container">
+            <div class="story-wrapper">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="section-subtitle">Notre Histoire Familiale</span>
+                        <h2 class="section-title mb-4">Une passion du toit perpétuée depuis plus d'un siècle</h2>
+                        <p class="text-muted mb-3">
+                            Fondée en 1897, notre entreprise familiale perpétue l'art de la toiture dans le respect des règles de l'artisanat d'excellence. De la taille minutieuse de l'ardoise naturelle jusqu'au façonnage du zinc et à la pose de tuiles traditionnelles, nous mettons notre rigueur au service de vos habitations.
+                        </p>
+                        <p class="text-muted mb-4">
+                            Implantés au cœur de la Meurthe-et-Moselle, nous intervenons auprès des particuliers et des professionnels pour des travaux neufs, des rénovations complètes ou des interventions urgentes suite aux intempéries.
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="devis.html" class="btn-primary-custom">Calculer mon devis</a>
+                            <a href="contact.html" class="btn-outline-custom">Discuter de votre projet</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="story-img-wrapper">
+                            <img src="img/imgfin.jpg" alt="Artisan travaillant l'ardoise">
+                            <div class="story-badge-floating">
+                                <span class="highlight">125+ ans</span>
+                                <span>de confiance et de savoir-faire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-     <section class="main-presentation container-fluid">
-        <h2>Qui sommes nous ?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nihil aut obcaecati asperiores dicta placeat non rerum nemo fugit quidem! Dolores ab eligendi ullam, veritatis optio tenetur aut illo sapiente?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi unde laborum minima corporis. Distinctio delectus quae eos doloremque laborum soluta praesentium incidunt voluptate harum! Placeat quos saepe odio dolorem aliquam!
-        </p>
-     </section>
-    
-       <!-- caroussel  -->
-       <div class="row">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          
-          <div class="carousel-inner">
-
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/slide1.jpg" alt="First slide">
+    <!-- Section Nos Prestations -->
+    <section class="section-padding bg-white" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Ce Que Nous Faisons</span>
+                <h2 class="section-title">Nos prestations de couverture & zinguerie</h2>
+                <p class="section-lead">Des solutions durables et esthétiques pour protéger et valoriser votre patrimoine immobilier.</p>
             </div>
 
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/slide2.jpg" alt="Second slide">
-            </div>
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Toiture en Tuile</h3>
+                        <p class="service-desc">Pose et rénovation de tuiles en terre cuite, béton ou plates. Une étanchéité éprouvée contre le vent et les intempéries locales.</p>
+                        <a href="devis.html" class="service-link">
+                            Devis tuile
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
 
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/slide3.jpg" alt="Third slide">
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Ardoise Naturelle</h3>
+                        <p class="service-desc">Travail traditionnel de l'ardoise au crochet ou au clou. Élégance intemporelle et longévité exceptionnelle pour votre toiture.</p>
+                        <a href="devis.html" class="service-link">
+                            Devis ardoise
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Zinguerie sur Mesure</h3>
+                        <p class="service-desc">Façonnage et soudure de gouttières, chéneaux, noues, abergements de cheminée et raccords étanches en zinc et cuivre.</p>
+                        <a href="devis.html" class="service-link">
+                            Devis zinguerie
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Dépannage & Fuites</h3>
+                        <p class="service-desc">Recherche d'infiltrations d'eau, bâchage d'urgence, remplacement de tuiles cassées et démoussage complet avec hydrofuge.</p>
+                        <a href="contact.html" class="service-link">
+                            Urgence dépannage
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-        <!-- fin caroussel -->
-        <section class="second-presentation container-fluid">
-          <h2>Une entreprise familial depuis 1897</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi obcaecati anime mi nihil! Voluptate porro quasi minus reprehenderit. Consequuntur soluta atque, mollitia exercitationem nihil vitaodi accusamus optio dolores veritatis consequatur!</p>
-        </section>
-      </div>
+    </section>
 
-      <section class="third-presentation container-fluid">
-        <h2>Notre savoir faire </h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis odit ipsa beatae voluptates debitis mollitia cumque reiciendis dolores repudiandae nam rem dolor excepturi, fugit sunt tenetur quae quod quasi amet?</p>
-      </section>
+    <!-- Carrousel Réalisations (Bootstrap 5 corrigé) -->
+    <section class="section-padding" id="realisations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Chantiers & Savoir-Faire</span>
+                <h2 class="section-title">Découvrez nos réalisations récentes</h2>
+                <p class="section-lead">Chaque toiture est traitée avec la plus grande exigence de finition et de pérennité.</p>
+            </div>
 
-      <section class="ending container-fluid">
-        <img  class="endingimg" src="img/imgfin.jpg" alt="Travail d'ardoise">
-          <h2>De la tuile à l'ardoise en passant par le zinc</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut incidunt earum distinctio dolorum consequatur, quas laudantium. Pariatur doloribus ipsam praesentium beatae officiis deleniti tempore eum cumque atque quae. Alias, assumenda!</p>
-        
-      </section>
+            <div class="custom-carousel-card">
+                <div id="carouselRealisation" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselRealisation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselRealisation" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselRealisation" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
 
-      <footer class="basdepage row">
-            <a href="cgu.html" target="_blank" style="color: black"> Condition d'utilisation et cookies</a>
-          <address>
-            <a href="mailto:polusgautier@gmail.com"  style="color: black"> Email : Polusgautier@gmail.com</a> &nbsp; &nbsp;
-            <a href="tel:0625994612" style="color: black">Telephone : 0625994612</a>
-          </address>
-          <div class="creationsite">
-            <p>© 2021-2022</p>
-          </div>
-        </footer>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/slide1.jpg" class="d-block w-100" alt="Chantier de couverture tuiles et zinguerie">
+                            <div class="carousel-caption-custom">
+                                <h3>Rénovation de toiture traditionnelle</h3>
+                                <p>Remplacement complet de la couverture et isolation sous toiture avec réfection intégrale des rives et faîtages.</p>
+                            </div>
+                        </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-  <script type="texte/javascript" id="cookieinfo" src="//cookieinfoscript.com/js/cookieinfo.min.js"></script>
-  </body>
+                        <div class="carousel-item">
+                            <img src="img/slide2.jpg" class="d-block w-100" alt="Travail de zinguerie et raccords de toiture">
+                            <div class="carousel-caption-custom">
+                                <h3>Pose soignée et travail du zinc</h3>
+                                <p>Abergements de lucarnes et solins d'étanchéité façonnés sur mesure pour une protection maximale.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/slide3.jpg" class="d-block w-100" alt="Pose de couverture de maison individuelle">
+                            <div class="carousel-caption-custom">
+                                <h3>Toitures de maisons individuelles & patrimoine</h3>
+                                <p>Finitions impeccables garanties 10 ans pour les habitations de la région meurthe-et-mosellane.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselRealisation" data-bs-slide="prev" aria-label="Précédent">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Précédent</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselRealisation" data-bs-slide="next" aria-label="Suivant">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Suivant</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Ardoise et Zinc -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-2">
+                    <span class="section-subtitle">Matériaux Nobles</span>
+                    <h2 class="section-title mb-4">De la tuile à l'ardoise en passant par le zinc</h2>
+                    <p class="text-muted mb-3">
+                        Nous sélectionnons rigoureusement des matériaux durables et certifiés, adaptés aux contraintes climatiques du Grand Est. Qu'il s'agisse de restaurer une toiture ancienne en ardoise ou de réaliser une zinguerie contemporaine, notre équipe apporte un souci constant du détail.
+                    </p>
+                    <ul class="list-unstyled text-muted mb-4 d-flex flex-column gap-2">
+                        <li class="d-flex align-items-center gap-2">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d95b28" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Étanchéité optimale et évacuation maîtrisée des eaux pluviales
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d95b28" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Respect du style architectural lorrain et des prescriptions locales
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d95b28" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Nettoyage et évacuation soignée des gravats en fin de chantier
+                        </li>
+                    </ul>
+                    <a href="devis.html" class="btn-primary-custom">Obtenir mon estimation gratuite</a>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <img src="img/imgfin.jpg" alt="Pose d'ardoise" class="img-fluid rounded-3 shadow-sm" style="height: 280px; width: 100%; object-fit: cover;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/imgfin2.jpg" alt="Zinguerie et finitions" class="img-fluid rounded-3 shadow-sm" style="height: 280px; width: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bannière Appel à l'action -->
+    <section class="container my-5">
+        <div class="cta-banner text-center text-lg-start d-lg-flex align-items-lg-center justify-content-lg-between">
+            <div>
+                <h2>Besoin d'un devis rapide pour vos travaux de toiture ?</h2>
+                <p>Recevez une estimation claire, détaillée et transparente sous 48 heures, sans aucun engagement.</p>
+            </div>
+            <div class="d-flex gap-3 justify-content-center justify-content-lg-end flex-wrap mt-4 mt-lg-0">
+                <a href="devis.html" class="btn-primary-custom">Demander un devis</a>
+                <a href="contact.html" class="btn-secondary-custom">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <!-- Colonne 1: Marque -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <img src="img/cat.png" alt="Logo Le Couvreur au Chat">
+                        <div>
+                            <div class="footer-brand-title">Le Couvreur au Chat</div>
+                            <div class="footer-brand-sub">Artisans couvreurs de père en fils depuis 1897</div>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        Entreprise familiale de couverture, zinguerie et rénovation de toiture en Meurthe-et-Moselle (54). Savoir-faire artisanal, rigueur et garantie décennale.
+                    </p>
+                </div>
+
+                <!-- Colonne 2: Liens Rapides -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-heading">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#services">Nos Prestations</a></li>
+                        <li><a href="#realisations">Nos Réalisations</a></li>
+                        <li><a href="devis.html">Demande de devis</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                        <li><a href="cgu.html">Conditions d'utilisation & Confidentialité</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3: Coordonnées & Horaires -->
+                <div class="col-lg-4 col-md-12">
+                    <h3 class="footer-heading">Contact & Intervention</h3>
+                    <div class="footer-contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>Téléphone direct : <a href="tel:0625994612" style="color:#fff; font-weight:700;">06 25 99 46 12</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span>Email : <a href="mailto:polusgautier@gmail.com" style="color:#fff;">polusgautier@gmail.com</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Zone : Nancy et toute la Meurthe-et-Moselle (54)</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <span>Lun - Sam : 08h00 - 19h00 (Urgences fuites 7j/7)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    © <span class="current-year">2026</span> Le Couvreur au Chat - Tous droits réservés.
+                </div>
+                <div>
+                    <a href="cgu.html" class="text-muted text-decoration-none me-3">Mentions Légales & Cookies</a>
+                    <a href="contact.html" class="text-muted text-decoration-none">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bandeau Cookies Moderne -->
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-labelledby="cookieTitle">
+        <div class="cookie-banner-title" id="cookieTitle">
+            🍪 Respect de votre vie privée
+        </div>
+        <p class="cookie-banner-text">
+            Ce site utilise des cookies techniques nécessaires à son bon fonctionnement et à la mesure d'audience anonyme. Vous pouvez accepter ou refuser ces dépôts à tout moment.
+        </p>
+        <div class="cookie-banner-actions">
+            <button id="acceptCookies" class="cookie-btn-accept">Accepter tout</button>
+            <button id="declineCookies" class="cookie-btn-decline">Refuser</button>
+        </div>
+    </div>
+
+    <!-- Scripts Bootstrap 5 & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
 </html>
